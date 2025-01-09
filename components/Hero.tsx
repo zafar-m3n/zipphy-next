@@ -6,7 +6,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { MagicButton } from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
 import { MdAllInclusive } from "react-icons/md";
-import { TypewriterEffect } from "./ui/TypewriterEffect";
+import { TypewriterEffectSmooth } from "./ui/TypewriterEffect";
 
 const Hero = () => {
   const titlesWithDescriptions = [
@@ -58,7 +58,7 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
             words={titlesWithDescriptions[currentTitleIndex].title}
           />
-          <TypewriterEffect
+          <TypewriterEffectSmooth
             key={`desc-${currentTitleIndex}`}
             words={[
               {
