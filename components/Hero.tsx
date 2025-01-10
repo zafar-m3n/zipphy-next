@@ -58,14 +58,10 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
             words={titlesWithDescriptions[currentTitleIndex].title}
           />
-          <TypewriterEffectSmooth
+          <TextGenerateEffect
             key={`desc-${currentTitleIndex}`}
-            words={[
-              {
-                text: titlesWithDescriptions[currentTitleIndex].description,
-                className: "text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl",
-              },
-            ]}
+            words={titlesWithDescriptions[currentTitleIndex].description}
+            multiColored={false}
           />
           <a href="#">
             <MagicButton title="Get Started" icon={<FaLocationArrow />} position="right" />
